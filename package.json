@@ -30,28 +30,6 @@
     "semver": "^7.3.4",
     "tar": "^6.1.0"
   },
-  "devDependencies": {
-    "@mapbox/cloudfriend": "^4.6.0",
-    "@mapbox/eslint-config-mapbox": "^3.0.0",
-    "action-walk": "^2.2.0",
-    "aws-sdk": "^2.840.0",
-    "codecov": "^3.8.1",
-    "eslint": "^7.18.0",
-    "eslint-plugin-node": "^11.1.0",
-    "mock-aws-s3": "^4.0.1",
-    "nock": "^12.0.3",
-    "node-addon-api": "^3.1.0",
-    "nyc": "^15.1.0",
-    "tape": "^5.2.2",
-    "tar-fs": "^2.1.1"
-  },
-  "nyc": {
-    "all": true,
-    "skip-full": false,
-    "exclude": [
-      "test/**"
-    ]
-  },
   "scripts": {
     "coverage": "nyc --all --include index.js --include lib/ npm test",
     "upload-coverage": "nyc report --reporter json && codecov --clear --flags=unit --file=./coverage/coverage-final.json",
