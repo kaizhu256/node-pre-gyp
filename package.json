@@ -24,7 +24,6 @@
     "https-proxy-agent": "^5.0.0",
     "make-dir": "^3.1.0",
     "node-fetch": "^2.6.1",
-    "node-gyp": "kaizhu256/node-gyp#alpha",
     "nopt": "^5.0.0",
     "npmlog": "^4.1.2",
     "rimraf": "^3.0.2",
